@@ -1,5 +1,5 @@
 #Change PROJECT_NAME to the name of your project
-PROJECT()
+PROJECT(labelShape)
 
 # set the name of the input image used to run the test
 SET(INPUT_IMAGE ${CMAKE_SOURCE_DIR}/images/cthead1.png)
@@ -57,9 +57,9 @@ ENDIF(BUILD_WRAPPERS)
 #be linked to all the libraries you specified above. 
 #You can build more than one executable per project
 
-SET(CurrentExe "check")
-ADD_EXECUTABLE(${CurrentExe} ${CurrentExe}.cxx)
-TARGET_LINK_LIBRARIES(${CurrentExe} ${Libraries})
+# SET(CurrentExe "check")
+# ADD_EXECUTABLE(${CurrentExe} ${CurrentExe}.cxx)
+# TARGET_LINK_LIBRARIES(${CurrentExe} ${Libraries})
 
 #the following line is an example of how to add a test to your project.
 #Testname is the title for this particular test.  ExecutableToRun is the
