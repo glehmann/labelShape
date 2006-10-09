@@ -53,6 +53,9 @@ IF(BUILD_WRAPPERS)
 ENDIF(BUILD_WRAPPERS)
    
    
+SET(CurrentExe check)
+ADD_EXECUTABLE(${CurrentExe} ${CurrentExe}.cxx)
+TARGET_LINK_LIBRARIES(${CurrentExe} ${Libraries})
 
 #the following block of code is an example of how to build an executable in
 #cmake.  Unmodified, it will add an executable called "MyExe" to the project.

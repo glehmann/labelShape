@@ -257,8 +257,8 @@ LabelShapeImageFilter<ImageType>
   mapIt = m_LabelShape.find( label );
   if ( mapIt == m_LabelShape.end() )
     {
-    // label does not exist, return a default value
-    return NumericTraits<PixelType>::Zero;
+    // label does not exist
+    itkExceptionMacro( << "Unknown label: " << static_cast< typename NumericTraits< PixelType >::PrintType >( label ) );
     }
   else
     {
@@ -275,8 +275,8 @@ LabelShapeImageFilter<ImageType>
   mapIt = m_LabelShape.find( label );
   if ( mapIt == m_LabelShape.end() )
     {
-    // label does not exist, return a default value
-    return CenterOfGravityType();
+    // label does not exist
+    itkExceptionMacro( << "Unknown label: " << static_cast< typename NumericTraits< PixelType >::PrintType >( label ) );
     }
   else
     {
@@ -293,8 +293,8 @@ LabelShapeImageFilter<ImageType>
   mapIt = m_LabelShape.find( label );
   if ( mapIt == m_LabelShape.end() )
     {
-    // label does not exist, return a default value
-    return BoundingBoxType();
+    // label does not exist
+    itkExceptionMacro( << "Unknown label: " << static_cast< typename NumericTraits< PixelType >::PrintType >( label ) );
     }
   else
     {
@@ -310,8 +310,8 @@ LabelShapeImageFilter<ImageType>
   mapIt = m_LabelShape.find( label );
   if ( mapIt == m_LabelShape.end() )
     {
-    // label does not exist, return a default value
-    return NumericTraits<double>::Zero;
+    // label does not exist
+    itkExceptionMacro( << "Unknown label: " << static_cast< typename NumericTraits< PixelType >::PrintType >( label ) );
     }
   else
     {
@@ -328,8 +328,8 @@ LabelShapeImageFilter<ImageType>
   mapIt = m_LabelShape.find( label );
   if ( mapIt == m_LabelShape.end() )
     {
-    // label does not exist, return a default value
-    return CenterOfGravityType();
+    // label does not exist
+    itkExceptionMacro( << "Unknown label: " << static_cast< typename NumericTraits< PixelType >::PrintType >( label ) );
     }
   else
     {
